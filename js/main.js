@@ -32,3 +32,10 @@ next.addEventListener('click', () => showSlide(index + 1));
 dots.forEach((dot, idx) => {
   dot.addEventListener('click', () => showSlide(idx));
 });
+
+
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+      question.classList.toggle('active');
+  });
+});
