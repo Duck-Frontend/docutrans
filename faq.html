@@ -70,9 +70,60 @@
     </header>
     <main class="main">
         <div class="container">
-            
-
-
+            <section class="section section__form form-faq">
+                <h2 class="callback__title section__title">Оставьте заявку и мы свяжемся с Вами</h2>
+                <form id="form-faq" method="post" class="form form__faq">
+                    <h3 class="form__title">Контактная информация:</h3>
+                    <div class="form__contact_info">
+                         <div class="form-left">
+                            <input type="text" name="name" id="name" placeholder="Ваше имя">
+                            <input type="tel" name="tel" id="tel" placeholder="Номер телефона">
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                         </div>
+                         <div class="form-right">
+                            <textarea name="description" id="description" placeholder="Описание"></textarea>
+                         </div>
+                    </div>
+                    <h3 class="form__title">Информация о грузе:</h3>
+                    <div class="form__cargo-info">
+                        <div class="form-left">
+                            <input type="text" name="weight" id="weight" placeholder="Вес">
+                            <input type="text" name="volume" id="volume" placeholder="Объём (габариты)">
+                            <input type="text" name="price" id="price" placeholder="Стоимость">
+                            <input type="text" name="method" id="method" placeholder="Способ транспортировки">
+                            <input type="text" name="type" id="type" placeholder="Характер груза">
+                            <input type="text" name="cod" id="cod" placeholder="Код ТН ВЭД">
+                        </div>
+                        <div class="form-right">
+                            <textarea name="add_info" id="add_info" placeholder="Дополнительная информация"></textarea>
+                        </div>
+                    </div>
+                    <label class="form__checkbox ">
+                        <input type="checkbox" name="checkbox" checked="checked">
+                        <span class="checkmark form-checkmark"></span>
+                        <p>Возможность штабелирования груза</p>
+                    </label>
+                    <h3 class="form__title">Маршрут перевозки:</h3>
+                    <div class="form__rout-info">
+                        <div class="form-left">
+                            <h4 class="form__subtitle">Пункт отправления:</h4>
+                            <input type="text" name="country" id="country" placeholder="Страна">
+                            <input type="text" name="city" id="city" placeholder="Город">
+                            <input type="text" name="codcity" id="codcity" placeholder="Код города">
+                        </div>
+                        <div class="form-left">
+                            <h4 class="form__subtitle">Пункт назначения:</h4>
+                            <input type="text" name="country_one" id="country_one" placeholder="Страна">
+                            <input type="text" name="city_one" id="city_one" placeholder="Город">
+                            <input type="text" name="codcity_one" id="codcity_one" placeholder="Код города">
+                        </div>
+                    </div>
+                    <div class="form__buttons">
+                        <button type="reset" class="form-button-reset button button-black button-flex" id="btn-reset"><span>Очистить</span><img src="./img/arrow-link.svg" alt=""></button>
+                        <button type="submit" class="submit form-button-submit button button-flex" id="btn-submit"><span>Отправить</span><img src="./img/arrow-link.svg" alt=""></button>
+                    </div>
+                </form>
+            </section>
         </div>
     </main>
     <footer class="footer">
@@ -149,5 +200,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/75bfbb9802.js" crossorigin="anonymous"></script>
+    <script src="./js/faq.js"></script>
 </body>
 </html>
